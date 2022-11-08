@@ -4,8 +4,71 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #000;
+    font-size: 20px;
+}
+
 #container{
     text-align: center;
+    background-color: #b91450;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 50px 100px;
+}
+
+h2{
+    color: #fff;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.card{
+    background-color: #fff;
+}
+
+#container > .card{
+    padding: 20px 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#container > .card .flex-container{
+    margin-bottom: 30px;
+}
+
+label{
+    color: #b91450;
+    display: block;
+    margin-bottom: 15px;
+}
+
+input, select, button{
+    border-color: #b91450;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button{
+    color: #b91450;
+    margin: 0 10px;
+}
+
+h3{
+    text-align: left;
+    margin: 5px 0;
+}
+
+#show-hide .card{
+    padding: 15px;
 }
 
 .hide{
@@ -14,4 +77,23 @@
 
 .show{
     display: block;
+}
+
+#show-hide .flex-container{
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+    min-height: 100px;
+}
+
+#show-hide .flex-container .flex-item{
+    padding: 15px 5px;
+    max-width: 30%;
+}
+
+#show-hide .flex-container .flex-item:first-child{
+    background-color: darkgray;
+}
+
+#show-hide .flex-container .flex-item div:not(#name-surname){
+    margin-top: 25px;
 }
