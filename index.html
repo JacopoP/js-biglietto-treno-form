@@ -9,7 +9,9 @@
 </head>
 <body>
     <div id="container">
-        <h2>Calcola il prezzo del tuo biglietto</h2>
+
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
         <div id="input-container">
             <label for="name">Nome cognome</label>
             <input type="text" id="name" placeholder="Es. Mario Rossi">
@@ -24,7 +26,25 @@
             <button id="confirm">Genera</button>
             <button id="cancel">Annulla</button>
         </div>
-        <div id="price"></div>
+
+        <div class="hide" id="show-hide">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div id="ticket">
+                <h3>Dettaglio passegeri</h3>
+                <div class="flex-container">
+                    <h4>NOME PASSEGGERO</h4>
+                    <div id="name-surname"></div>
+                    <h5>Offerta</h5>
+                    <div id="offer"></div>
+                    <h5>Carrozza</h5>
+                    <div id="carriage"></div>
+                    <h5>Codice CP</h5>
+                    <div id="cp"></div>
+                    <h5>Costo biglietto</h5>
+                    <div id="price"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/myscript.js"></script>
 </body>
