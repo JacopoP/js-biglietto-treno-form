@@ -2,6 +2,8 @@ let generalities=document.getElementById("name");
 
 let yOld=document.getElementById("age");
 
+yOld.value=null;
+
 let km=document.getElementById("km");
 
 let price;
@@ -46,7 +48,7 @@ cancel.addEventListener("click",
     function(){
         generalities.value=null;
         km.value=null;
-        yOld.value="maggiorenne"
+        yOld.value=null;
         price=null;
         ticket.className="hide";
     }
